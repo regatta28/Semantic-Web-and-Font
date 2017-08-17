@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href='reset.css'>
+		<style type="text/css">
+		body {
+			background-color: #F5D76E;
+			color: white;
+			
+		}
+		nav{
+			font-family: roboto;
+			
+			margin: 30px auto; 
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px; 
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none;
+			color: white;
+			flex:.5;
+			height: 30px;
+			font-family: Dosis;
+			padding:10px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			
+			}
+		#landing {
+			font-family: Dosis;
+			font-size: 3.5em;
+			color: black;
+			text-align: center;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			
+		}
+		h2 {
+			margin-bottom: 20px;
+		}
+		img {
+			width: 100%;
+			height: 300px;
+			
+			
+		}
+		.cards {
+			display: flex;
+			flex-direction: column;
+			color: black;
+			justify-content: space-around;
+		
+		}
+		.card {
+			flex: 1;
+			margin-top; 50px;
+			margin: 50px 20px;
+			border: 10px white solid;
+			background-color: white;
+			padding: 10px;
+			
+			
+		}
+		.card h2 {
+			font-family: dosis;
+            font-size: 25px;
+		}
+		.card img {
+			width: 100%;
+		} 
+		.card p {
+			font-family: dosis;
+            font-size: 18px;
+			
+		}
+
+		@media screen and (min-width: 700px){
+			body {
+				color: white;
+			}
+			nav{
+				display: flex;
+				flex-direction: row;
+				height: 80px;
+				
+				
+			}
+			a{
+				justify-content: flex-end;
+				border: none; 
+			}
+			#logoNav{
+				flex: 2;
+				text-align: left;
+				font-size: 2.5em;
+				margin-left: 10px;
+				
+			}
+			#landing {
+				display: flex;
+				flex-direction: row;
+				width: 80%;
+				margin: 100px auto;
+			}
+			.cards {
+				flex-direction: row;
+				
+				flex-wrap: nowrap;
+			}
+			
+		}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		<a id="logoNav">CHOCOBLOCK</a>
+		<a href="#">Home</a>
+		<a href="#">Projects</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+		<a href="#">Photos</a>
+	</nav>
+	<section id='landing'>
+		<div><h2>Make Creative Clever Fun Apps. Simple.</h2></div>
+		<div><img src='laptop.png' alt='Laptop'></div>
+	</section>
+	<section class='cards'>
+		<div class='card'>
+			<img src='graphic1.png' alt='Design Pic'>
+			<h2>Remote Learning</h2>
+			<p>Once you join a Code Institute Bootcamp you will be taken on an 
+				accelerated contextualised learning path across three streams</p>
+		</div>
+			<div class='card'>
+			<img src='graphic2.png' alt='Design Pic'>
+			<h2>Remote Learning</h2>
+			<p>Once you join a Code Institute Bootcamp you will be taken on an 
+				accelerated contextualised learning path across three streams</p>
+		</div>
+			<div class='card'>
+			<img src='graphic3.png' alt='Design Pic'>
+			<h2>Remote Learning</h2>
+			<p>Once you join a Code Institute Bootcamp you will be taken on an 
+				accelerated contextualised learning path across three streams</p>
+		</div>
+			
+	</section>
+
+
+</body>
+</html>
